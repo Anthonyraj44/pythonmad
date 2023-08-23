@@ -1,0 +1,105 @@
+(1) PYTHON :
+          * Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+          * python is an interpreted and object - oriented method ,high-level programming language with dynamic semantics.
+
+(2) PYTHON USES :
+               * Python can be used on a server to create web applications.
+               * software development,
+               * mathematics,
+               * system scripting.
+               * web designing
+               * data analysis
+
+(3) PYTHON COMMENTS :
+                 * Comments can be used to explain Python code.
+                 * Comments can be used to make the code more readable.so, understand to everyone
+                 * Comments can be used to prevent execution when testing code in python.
+                 * comments starting to be (#).and then python will ignore .
+                 * python accept multiple comments line.
+                   example:
+                   
+               (i)        a= 5,109,5
+                          print(a)        # the numbers are (int) data type   
+
+                        ➪  the # sentences are python are ignored in the program.
+
+                * Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
+                * it will be considerd (""" to """)
+
+(4) VARIABLES :
+             * Variables are containers for storing data values.
+              example :
+                         a=10        # 10 is data storing value.
+                                     # a is a variable.
+
+            * Python has no command for declaring a variable.
+            * A variable is created the moment you first assign a value to it.
+
+(5) THE VARIABLE ARE FOLLOWING STEPS :
+
+   The Variables do not need to be declared with any particular type, and can even change type after they have been set.
+
+(i) Casting:
+    ☞︎︎︎ If you want to specify the data type of a variable, this can be done with casting.
+(II) Get the Type:
+    ☞︎︎︎ You can get the data type of a variable with the type() function.
+(III) Single and double quotes:
+    ☞︎︎︎ the string variables can be declared by using ('' or "").
+(IV) Case-Sensitive:
+      Variable names are case-sensitive.
+      example: 
+            a=10
+            A="antho"   # the variable name are a & A is case - sensitive.
+
+(6) VARIABLE NAME :
+
+               * A variable name  can have a short name (like x and y) or name , place , a to z ...etc,
+               * it must be any letters or underscore character...( a=10 or a_anto =5)   # a & a_anto are variable name.
+
+(7) VARIABLES ARE IN MULTI WAYS :
+                               there are different ways to variable to defined.
+(I) CAMEL CASE :
+                 Each word, except the first, starts with a capital letter:
+                EXAMPLE:            myVariableName = "ANTO"         # my(V)ariable(N)ame =the first letter else. all are in capital letter.
+
+(II) PASCAL CASE :
+                  Each word starts with a capital letter:
+                EXAMPLE:            MyVariableName = "anto"         # (M)y(V)ariable(N)ame = the all letter in capital letter.
+
+(III) SNAKE CASE :
+                  Each word is separated by an underscore character:
+                 EXAMPLE:           my_variable_name = "anto"       # the each word is separated by "_".
+
+
+
+ (8) ASSIGN MULTIPLE VALUE :
+                              Python allows you to assign values to multiple variables in one line.
+                          Example: a,b,c= "anto","aravind","aakash"
+                                   print(a,b,c)                     # "anto","aravind","aakash" the assign value in multiple variable.
+  
+there are in different ways.
+
+(i) One Value to Multiple Variables:
+                                          And you can assign the same value to multiple variables in one line.
+                                          Example:  x = y = z = "Orange"
+                                                   print(x)
+                                                   print(y)
+                                                   print(z)                    # they are same value "orange" but the variable are diffrent.
+
+(9) OUTPUT VARIABLES :
+                    * The Python print() function is often used to output variables.
+                    * The print () inside the argument values are ["+" ,"-" , "*" , "/"] whatever operator use to and to get the value. it's will be in numberic type.
+                    * And to the value are in character [ "+" , ",'] are using
+
+                    example: (i) x = "Python "
+                                 y = "is "
+                                 z = "awesome"
+                                 print(x + y + z)          # the assign character in "+"       O/P : python is awsome
+
+                              (ii) x = 95
+                                   y = 50
+                                   print(x - y)            # the assign value to separation     O/P : 45
+
+(10) GLOBAL VARAIABLE :
+                    
+            
