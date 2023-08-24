@@ -101,5 +101,43 @@ there are in different ways.
                                    print(x - y)            # the assign value to separation     O/P : 45
 
 (10) GLOBAL VARAIABLE :
-                    
-            
+                       * Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+                       * Global variables can be used by everyone, both inside of functions and outside.           
+            example: 
+                    a = "awesome"                
+                    def myfunc():                               # def are used to outsidefunction
+                      print("The boy is " + x)
+                    myfunc()                                                                 O/p : The boy is awsome.          
+
+                       * If you create a variable with the same name inside a function python accept .
+            example: 
+                      x = "cute"
+                      def myfunc():
+                        x = "adorable"                         # In this "x" is variable , in two times in the program
+                          print("the baby is " + x)
+                      myfunc()
+                      print("the flower is " + x)                                                 O/p : the baby is cute
+                                                                                                        the flower is adorable.
+
+(11) DATA TYPES IN PYTHON :
+                            *  In programming, data type is an important concept.
+                            *  Variables can store data of different types, and different types can do different things.
+                            *  Python has the following data types built-in by default.
+The categories are ,
+
+         ☞︎︎︎  Text Type         :	str ( string are text type / example : a= "alex" )
+
+         ☞︎︎︎  Numeric Types     :	int ( just numbers / example : a = 12 ), float ( numbers in points / example: a = 0.12), complex ( numbers with j / example: a = o2j ).
+
+         ☞︎︎︎  Sequence Types    :	list ( list are define in squre bracket / example : a = ["apple"] , tuple ( tuple are defind as round bracket / example : a = ( "apple") ,  range ( range function are the function value is starting & between the function value to calculate / example : a = range 6 , o/p 0,1,2,3,4,5.
+
+         ☞︎︎︎  Mapping Type      :	dict ( dict store data values in key ,value pairs / example a = { "name":"alex"} ) its define as {} .
+
+         ☞︎︎︎  Set Types         :	set ( Sets are used to store multiple items in a single variable / example a= { "ant", "cat" , "dog"} ) set are define {} , frozenset ( Freeze the list, and make it unchangeable  / example: a = { 'apple'}.
+
+         ☞︎︎︎  Boolean Type      :	bool ( Booleans represent one of two values: True or False / example : a = 10 
+                                                                                                           print(10)    o/p ; true.  
+                     
+         ☞︎︎︎  Binary Types      :	bytes, bytearray, memoryview
+
+         ☞︎︎︎  None Type         :	NoneType
