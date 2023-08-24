@@ -141,3 +141,31 @@ The categories are ,
          ☞︎︎︎  Binary Types      :	bytes, bytearray, memoryview
 
          ☞︎︎︎  None Type         :	NoneType
+
+
+(10)  PYTHON NUMBERS :
+
+ (i)   * there are three type in python.
+                           ➪ int         ☞︎︎︎   Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length. ( example: a = 12 )
+                           ➪ float       ☞︎︎︎   "Floating point number" is a number, positive or negative, containing one or more decimals  ( example: a = 12.0 )
+                           ➪ complex     ☞︎︎︎    Complex numbers are written with a "j" as the imaginary part.  ( example: a = 12j )
+
+(ii) random number : 
+                      * Python does not have a random() function to make a random number, 
+                        but Python has a built-in module called random that can be used to make random numbers.
+example:
+         import random
+          print(random.randrange(1, 10))     # the random function are choose the value in random from the list.
+
+
+(11) specify a variable type (or) python casting :
+
+                                 There may be times when you want to specify a type on to a variable.
+there are 3 type ,
+                    ➪ int()
+                    ➪ float()
+                    ➪ str()
+
+
+                
+ 
