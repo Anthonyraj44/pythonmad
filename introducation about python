@@ -136,7 +136,7 @@ The categories are ,
          ☞︎︎︎  Set Types         :	set ( Sets are used to store multiple items in a single variable / example a= { "ant", "cat" , "dog"} ) set are define {} , frozenset ( Freeze the list, and make it unchangeable  / example: a = { 'apple'}.
 
          ☞︎︎︎  Boolean Type      :	bool ( Booleans represent one of two values: True or False / example : a = 10 
-                                                                                                           print(10)    o/p ; true.  
+                                                                                                           print(10) )   o/p ; true.  
                      
          ☞︎︎︎  Binary Types      :	bytes, bytearray, memoryview
 
@@ -146,7 +146,7 @@ The categories are ,
 (10)  PYTHON NUMBERS :
 
  (i)   * there are three type in python.
-                           ➪ int         ☞︎︎︎   Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length. ( example: a = 12 )
+                           ➪ int         ☞︎︎︎    Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length. ( example: a = 12 )
                            ➪ float       ☞︎︎︎   "Floating point number" is a number, positive or negative, containing one or more decimals  ( example: a = 12.0 )
                            ➪ complex     ☞︎︎︎    Complex numbers are written with a "j" as the imaginary part.  ( example: a = 12j )
 
@@ -166,6 +166,67 @@ there are 3 type ,
                     ➪ float()
                     ➪ str()
 
+(12) PYHTON STRINGS :
 
+   * Strings in python are surrounded by either single quotation marks, or double quotation marks.
+   * 'hello' is the same as "hello".
+
+example: 
+       a= "heiii"
+       print(a)         O/p: heii
+
+   * You can display a string literal with the print() function.
+   * string can assign a multiline string to a variable by using three quotes (""" , """) or three single quotes (''' , ''').
+
+example: 
+          a=""" hello everybody this is alex from chennai."""
+          print(a)                                            O/p : hello everybody this is alex from chennai.
+
+(i) SLICING STRING :
+                *  slicing string are you can return a range of characters by using the slice syntax.
+example:
+          a=" hiii alex"
+          print (a.[1:3])        O/p: iii
+
+                * SLICE FROM THE START : By leaving out the start index, the range will start at the first character
+
+                             exampe:    a="hiii alex"  
+                                        print (a.[:3])      O/p: hiii
                 
+                * SLICE TO THE END : By leaving out the end index, the range will go to the end.
+
+                              example:    a="hiii alex"
+                                          print(a.[2:])      O/p : ii alex
+
+                * NEGATIVE INDEXING : Use negative indexes to start the slice from the end of the string.
+
+                              exampe :    a="hiii alex"
+                                          print (a.[-3:-1])     O/p: lex
+
+(ii) MODIFY STRING :
+
+                * UPPER CASE : The upper() method returns the string in upper case ( all letter are capitel letter)
+
+                         example:  a="hiii alex"
+                                  print(a.upper())         O/p: HIII ALEX
+
+                * LOWER CASE : The lower() method returns the string in lower case ( all letter are small letter).
+
+                         example:   a=("HIII ALEX")
+                                    print(a.lower())         O/p: hiii alex
+
+                * REMOVE WHITESPACE : The strip() method removes any whitespace from the beginning or the end.
+
+                         example:   a=("   hiii  alex  ")
+                                    print(a.strip())               O/p: hiii alex       # the space are removed.
+
+                * REPLACE STRING : The replace() method replaces a string with another string.
+
+                         example:  a=(" aiii alex") 
+                                   print(a.replace("a","h"))        O/p : hiii alex
+
+                * SPLIT STRING : The split() method returns a list where the text between the specified separator becomes the list items. split the value to another another.
+ 
+                         example:  a="hello,alex" 
+                                   print(a.split.())      # 'hello','alex'
  
