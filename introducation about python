@@ -1,8 +1,10 @@
-(1) PYTHON :
+                                          (1) PYTHON :
+
           * Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
           * python is an interpreted and object - oriented method ,high-level programming language with dynamic semantics.
 
-(2) PYTHON USES :
+                                      (2) PYTHON USES :
+
                * Python can be used on a server to create web applications.
                * software development,
                * mathematics,
@@ -10,7 +12,8 @@
                * web designing
                * data analysis
 
-(3) PYTHON COMMENTS :
+                                    (3) PYTHON COMMENTS :
+
                  * Comments can be used to explain Python code.
                  * Comments can be used to make the code more readable.so, understand to everyone
                  * Comments can be used to prevent execution when testing code in python.
@@ -19,14 +22,17 @@
                    example:
                    
                (i)        a= 5,109,5
-                          print(a)        # the numbers are (int) data type   
+                          print(a)        # the numbers are (int) data type
+
+
 
                         ➪  the # sentences are python are ignored in the program.
 
                 * Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
                 * it will be considerd (""" to """)
 
-(4) VARIABLES :
+                                       (4) VARIABLES :
+
              * Variables are containers for storing data values.
               example :
                          a=10        # 10 is data storing value.
@@ -35,7 +41,7 @@
             * Python has no command for declaring a variable.
             * A variable is created the moment you first assign a value to it.
 
-(5) THE VARIABLE ARE FOLLOWING STEPS :
+                                (5) THE VARIABLE ARE FOLLOWING STEPS :
 
    The Variables do not need to be declared with any particular type, and can even change type after they have been set.
 
@@ -51,7 +57,7 @@
             a=10
             A="antho"   # the variable name are a & A is case - sensitive.
 
-(6) VARIABLE NAME :
+                                     (6) VARIABLE NAME :
 
                * A variable name  can have a short name (like x and y) or name , place , a to z ...etc,
                * it must be any letters or underscore character...( a=10 or a_anto =5)   # a & a_anto are variable name.
@@ -84,9 +90,9 @@ there are in different ways.
                                           Example:  x = y = z = "Orange"
                                                    print(x)
                                                    print(y)
-                                                   print(z)                    # they are same value "orange" but the variable are diffrent.
-
+                                                   print(z)                    # they are same value "orange" but the variable are dif
 (9) OUTPUT VARIABLES :
+
                     * The Python print() function is often used to output variables.
                     * The print () inside the argument values are ["+" ,"-" , "*" , "/"] whatever operator use to and to get the value. it's will be in numberic type.
                     * And to the value are in character [ "+" , ",'] are using
@@ -119,7 +125,8 @@ there are in different ways.
                       print("the flower is " + x)                                                 O/p : the baby is cute
                                                                                                         the flower is adorable.
 
-(11) DATA TYPES IN PYTHON :
+                                (11) DATA TYPES IN PYTHON :
+
                             *  In programming, data type is an important concept.
                             *  Variables can store data of different types, and different types can do different things.
                             *  Python has the following data types built-in by default.
@@ -143,7 +150,7 @@ The categories are ,
          ☞︎︎︎  None Type         :	NoneType
 
 
-(10)  PYTHON NUMBERS :
+                                        (10)  PYTHON NUMBERS :
 
  (i)   * there are three type in python.
                            ➪ int         ☞︎︎︎    Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length. ( example: a = 12 )
@@ -158,7 +165,7 @@ example:
           print(random.randrange(1, 10))     # the random function are choose the value in random from the list.
 
 
-(11) specify a variable type (or) python casting :
+                             (11) specify a variable type (or) python casting :
 
                                  There may be times when you want to specify a type on to a variable.
 there are 3 type ,
@@ -166,7 +173,7 @@ there are 3 type ,
                     ➪ float()
                     ➪ str()
 
-(12) PYHTON STRINGS :
+                                          (12) PYHTON STRINGS :
 
    * Strings in python are surrounded by either single quotation marks, or double quotation marks.
    * 'hello' is the same as "hello".
@@ -230,3 +237,161 @@ example:
                          example:  a="hello,alex" 
                                    print(a.split.())      # 'hello','alex'
  
+(iii) STRING CONCATENATION : 
+                    To concatenate, or combine, two strings you can use the ( + ) operator.
+    example :
+            a,b into c ?
+                            a= "Hiii"
+                            b= "Alex"
+                            c=a+b
+                            print(c)     # O/p : Hiii Alex
+(iv) format string :
+                   *  the Python Variables chapter, we cannot combine strings and numbers like this.  
+                   *  But we can combine strings and numbers by using the format() method  .
+                   * {} there are replace the value in format string
+ example :
+           age = 22                                    # insert the number into string.
+           txt = "My name is alex , and I am {}"
+           print(txt.format(age))                       # O/p: My name is alex , and I am 22 
+
+(v) ESCAPE CHARACTERS IN STRING :
+                             * To insert characters that are illegal in a string, use an escape character
+                             * An escape character is a backslash \ followed by the character you want to insert.
+  example:
+          txt = "We are the so-called "Vikings" from the north."       # there are double quotes invold in 3 , the specify word are mention using \  \.
+                       O/p : error.
+
+ESCAPE CHARACTERS ;
+
+            1 .     \'	   Single Quote	  ➪   python to write the string normal , example : it is to change it's . (\') this format used.
+
+            2.      \\	   Backslash	  ➪   txt= "This will insert one \\ (backslash)." to  O/P : " This will insert one \ (backslash).
+
+            3.      \n	   New Line	  ➪   txt = "Hello\nWorld!" to   O/P :  Hello
+                                                                                      World!	
+
+            4.      \r	   Carriage Return  ➪   txt = "Hello\rWorld!  to  O/P :  Hello
+                                                                                     World!
+
+            5.      \t	   Tab	           ➪   txt = "Hello\tWorld!"  to  O/P : Hello  World       # both letter between spaced.
+
+            6.      \b	   Backspace	  ➪   txt = "Hello \bWorld!" to  O/P : HelloWorld         # both letter between space removed
+
+            7.      \f        Form Feed	  ➪
+
+            8.      \ooo      Octal value	  ➪   txt = "\110\145\154\154\157"   to    O/P : Hello 
+
+            9.      \xhh      Hex value        ➪   txt = "\x48\x65\x6c\x6c\x6f"   to   O/P : Hello
+
+
+                                       (11) PYTHON BOOLEANS 
+
+    * Booleans represent one of two values: (True) or (False) .
+    * The bool() function allows you to evaluate any value, and give you True or False in return.
+
+Example :  (i)                                                                 (ii) 
+                print(10 > 9)     # O/p : true                                             x = "Hello"      # O/p : true
+                print(10==9)              false                                            y = 15                   true
+                 print(10<9)              false                                            print(bool(x))
+                                                                                           print(bool(y))
+
+                                     (12) PYTHON OPERATORS  
+
+      *  Operators are used to perform operations on variables and values.
+      *  operators in the following groups:
+                                           1. Arithmetic operators
+                                           2. Assignment operators
+                                           3. Comparison operators
+                                           4. Logical operators
+                                           5. Identity operators
+                                           6. Membership operators
+                                           7.  Bitwise operators
+
+
+(1) ARITHMETIC OPERATORS :
+                            Arithmetic operators are common mathematic operators.     
+
+example : ( x = 10 , y = 5 )
+
+                                                     o/p
+
+1.  +	Addition	         x + y	 10+5             15
+2.  -	Subtraction	x - y	 10-5              5
+3.  *	Multiplication	x * y	 10*5             50
+4.  /	Division	         x / y	 10/5              2
+5.  %	Modulus	         x % y	 10%5              0
+6.  **	Exponentiation	x ** y	 10**5            10000              # 10*10*10*10*10
+7.  //	Floor division	x // y    10//5             2                 #
+
+
+
+(2) PYTHON ASSIGNMENT OPERATORS : 
+                                  Assignment operators are used to assign values to variables.
+.... X=5
+
+                       Operator	Example	    Same As	       o/P :
+                  1.      =	x = 5	     x = 5	        5
+                  2.     +=	x += 3	     x = x + 3	        8
+                  3.     -=	x -= 3	     x = x - 3	        2
+                  4.     *=	x *= 3	     x = x * 3	        15
+                  5.     /=	x /= 3	     x = x / 3	        1.666
+                  6.     %=	x %= 3	     x = x % 3	        2
+                  7.    //=	x //= 3	     x = x // 3	        1
+                  8.    **=  	x **= 3	     x = x ** 3	        125
+                  9.     &=	x &= 3	     x = x & 3	        1
+                  10.    |=	x |= 3	     x = x | 3	        7
+                  11.    ^=	x ^= 3	     x = x ^ 3	        6
+                  12.    >>=        x >>= 3	     x = x >> 3	        0
+                  13.    <<=	x <<= 3	     x = x << 3           40
+
+
+(3) PYTHON COMPARISON OPERATOR :         
+                                 Comparison operators are used to compare two values.
+
+example ( x = 10 , y = 5 )
+                
+                      Operator	Name	                    Example	O/p :
+
+                         == 	Equal	                     x == y         false    	
+                         !=	Not equal	            x != y	true
+                         >	         Greater than	            x > y	         true
+                         <	         Less than	            x < y	         false
+                         >=	Greater than or equal to	   x >= y	true
+                         <=	Less than or equal to	   x <= y         false
+
+
+(4) PYHTON LOGICAL OPERATOR :
+                                 Logical operators are used to combine conditional statements.         
+
+ ( X = 5 tO put ....... )
+
+   operator            description                                             example                                     O/p :
+
+1. and 	        Returns True if both statements are true	                 x < 5 and  x < 10	                       true     
+2. or	        Returns True if one of the statements is true 	        x < 5 or x < 4	                       true
+3. not	        Reverse the result, returns False if the result is true        not(x < 5 and x < 10)o put .....)         false  
+
+
+(5) PYTHON IDENTIFY OPERATORS :
+                                  * python compare the objects, not if they are equal, but if they are actually the same object, 
+with the same memory location.
+
+
+Operator	                               Description	                                           Example	
+
+1.  is 	              Returns True if both variables are the same object	                 x is y	
+2.  is not	     Returns True if both variables are not the same object	                 x is not y
+
+
+(6) PYTHON MEMBERSHIP OPERATORS :
+                                     They are used to test if a sequence is presented in an object.
+
+
+Operator	           Description	                                                                          Example
+
+1.  in 	         Returns True if a sequence with the specified value is present in the object	             x in y	
+2.  not in	Returns True if a sequence with the specified value is not present in the object	             x not in y
+
+
+
+
