@@ -570,7 +570,8 @@ update()	                              Update the set with the union of this set
 DICTIONARIES METHOD : 
 
 
-      Method	Description
+    Method	                                    Description
+
 1. clear()	                      Removes all the elements from the dictionary..
 
 2. copy()	                        Returns a copy of the dictionary.
@@ -593,3 +594,129 @@ DICTIONARIES METHOD :
 
 11. values()                      Returns a list of all the values in the dictionary.
 
+
+                    
+              (17)  PYTHON IF .... ELSE.
+
+* "if statement" is written by using the if keyword
+
+     Python supports the usual logical conditions from mathematics.
+
+                      1.  Equals: a == b
+                      2.  Not Equals: a != b
+                      3.  Less than: a < b
+                      4.  Less than or equal to: a <= b
+                      5.  Greater than: a > b
+                      6.  Greater than or equal to: a >= b
+Example :
+           a = 33
+           b = 200
+            if b > a:
+           print("b is greater than a")        # O/p : b is greater than a
+
+
+* ELIF STATEMENT : 
+              The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition.
+Example : 
+          a = 33
+          b = 33
+            if b > a:
+         print("b is greater than a")
+           elif a == b:
+         print("a and b are equal")       # O/p: a and b are equal
+
+* ELSE STATEMENT :
+              The else keyword catches anything which isn't caught by the preceding conditions.
+Example : 
+          a = 200
+          b = 33
+            if b > a:
+          print("b is greater than a")
+            elif a == b:
+          print("a and b are equal")
+            else:
+          print("a is greater than b")       # O/p : a is greater then b
+
+* 
+
+STATEMENT              DISTRACTION                                            EXAMPLE 
+
+    AND              and keyword is a logical operator, 
+                     and is used to combine conditional statements:            a = 200                # o/P : Both condition are true  
+                                                                               b = 33
+                                                                               c = 500
+                                                                                if a > b and c > a:
+                                                                                print("Both conditions are True")
+                     
+
+    OR              or keyword is a logical operator, 
+                   and is used to combine conditional statements                    a = 200
+                                                                                    b = 33             # O/p : At least one of the conditions is True.
+                                                                                    c = 500
+                                                                                    if a > b or a > c:
+                                                                                      print("At least one of the conditions is True")
+        
+
+    NOT          not keyword is a logical operator, and is used to 
+                 reverse the result of the conditional statement:                   a = 33
+                                                                                    b = 200            # O/p : a is NOT greater than b
+                                                                                    if not a > b:        
+                                                                                      print("a is NOT greater than b")   
+
+
+
+  PASS            if statements cannot be empty, but if you for some                                           
+                  reason have an if statement with no content ,                      a=33                  
+                  put in the pass statement to avoid getting an error.               b= 200                                    
+                                                                                      if b > a :       # O/p :  having an empty if statement like this, would raise an error without the pass statement                               
+                                                                                        pass  
+
+
+
+                         (17) PYTHON LOOPS 
+
+     Python has two primitive loop commands:
+
+                                   ➪  while loops
+                                   ➪  for loops
+
+                         (18) WHILE LOOP : 
+
+           the while loop we can execute a set of statements as long as a condition is true.
+ Example : 
+           i = 1                         # O/p : 1
+          while i < 6:                           2
+             print(i)                            3
+          i += 1                                 4
+                                                 5
+
+*  THE CONTINUE STATEMENT : 
+                               the continue statement we can stop the current iteration, and continue with the next.
+Example : 
+           i = 0                   # O/p : 0
+           while i < 6:                    1
+            i += 1                         2
+           if i == 3:                      4
+             continue                      5
+           print(i)                        6
+
+* THE BREAK STATEMENT :   
+                        the break statement we can stop the loop even if the while condition is true .
+Example : 
+            i = 1                   # O/p :   1
+            while i < 6:                      2
+              print(i)                        3
+              if i == 3:
+                break
+              i += 1
+
+*  THE ELSE STATEMENT :
+                           the else statement we can run a block of code once when the condition no longer is true.
+Example :
+            i = 1                                 # O/p :  1
+          while  i < 6:                                    2
+            print (i)                                      3
+          i+=1                                             4
+          else :                                           5
+             print( " i is no longer less than 6")         i is no longer less than 6
+           
