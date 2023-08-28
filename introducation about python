@@ -315,13 +315,13 @@ example : ( x = 10 , y = 5 )
 
                                                      o/p
 
-1.  +	Addition	         x + y	 10+5             15
-2.  -	Subtraction	x - y	 10-5              5
-3.  *	Multiplication	x * y	 10*5             50
-4.  /	Division	         x / y	 10/5              2
-5.  %	Modulus	         x % y	 10%5              0
-6.  **	Exponentiation	x ** y	 10**5            10000              # 10*10*10*10*10
-7.  //	Floor division	x // y    10//5             2                 #
+1.  +	Addition	         x + y	   10+5             15
+2.  -	Subtraction	       x - y	   10-5              5
+3.  *	Multiplication	   x * y	   10*5             50
+4.  /	Division	         x / y	   10/5              2
+5.  %	Modulus	           x % y	   10%5              0
+6.  **	Exponentiation	 x ** y	   10**5            10000              # 10*10*10*10*10
+7.  //	Floor division	 x // y    10//5             2                 #
 
 
 
@@ -329,20 +329,21 @@ example : ( x = 10 , y = 5 )
                                   Assignment operators are used to assign values to variables.
 .... X=5
 
-                       Operator	Example	    Same As	       o/P :
-                  1.      =	x = 5	     x = 5	        5
+                    Operator		    Same As	       o/P :
+
+                  1.      =	x = 5	        x = 5	            5
                   2.     +=	x += 3	     x = x + 3	        8
                   3.     -=	x -= 3	     x = x - 3	        2
                   4.     *=	x *= 3	     x = x * 3	        15
                   5.     /=	x /= 3	     x = x / 3	        1.666
                   6.     %=	x %= 3	     x = x % 3	        2
                   7.    //=	x //= 3	     x = x // 3	        1
-                  8.    **=  	x **= 3	     x = x ** 3	        125
+                  8.    **=  	x **= 3	   x = x ** 3	        125
                   9.     &=	x &= 3	     x = x & 3	        1
                   10.    |=	x |= 3	     x = x | 3	        7
                   11.    ^=	x ^= 3	     x = x ^ 3	        6
-                  12.    >>=        x >>= 3	     x = x >> 3	        0
-                  13.    <<=	x <<= 3	     x = x << 3           40
+                  12.    >>=x >>= 3	     x = x >> 3	        0
+                  13.    <<=	x <<= 3	   x = x << 3         40
 
 
 (3) PYTHON COMPARISON OPERATOR :         
@@ -379,19 +380,216 @@ with the same memory location.
 
 Operator	                               Description	                                           Example	
 
-1.  is 	              Returns True if both variables are the same object	                 x is y	
-2.  is not	     Returns True if both variables are not the same object	                 x is not y
+1.  is 	              Returns True if both variables are the same object	                       x is y	
+2.  is not	          Returns True if both variables are not the same object	                 x is not y
 
 
 (6) PYTHON MEMBERSHIP OPERATORS :
                                      They are used to test if a sequence is presented in an object.
 
 
-Operator	           Description	                                                                          Example
+Operator	           Description	                                                                            Example
 
-1.  in 	         Returns True if a sequence with the specified value is present in the object	             x in y	
-2.  not in	Returns True if a sequence with the specified value is not present in the object	             x not in y
+1.  in 	         Returns True if a sequence with the specified value is present in the object	                 x in y	
+2.  not in	     Returns True if a sequence with the specified value is not present in the object	             x not in y
 
 
 
+                            (13) PYTHON LIST
+
+   * Lists are used to store multiple items in a single variable .
+   * Lists are created using square brackets [] .
+   * List items are , * ordered * changeable * allow all dublicate value. 
+Examble :
+        thislist = ["apple", "banana", "cherry", "apple", "cherry"]      # two apple are in the list .
+
+   * LIST LENGTH : To determine how many items a list has, use the len() function .
+Example : 
+           thislist = ["apple", "banana", "cherry"]
+           print(len(thislist))                              # O/p : 3
+
+   * List items can be of any data type ( string , int , boolen )
+   * From Python's perspective, lists are defined as objects with the data type 'list' .....< class.type>
+
+(1) ACCESS LIST :
+           
+       * ACCESS ITEMS : you can access them by referring to the index number . example :     thislist = ["apple", "banana", "cherry"]
+                                                                                             print(thislist[1])        O/p : banana 
+
+       * NEGATIVE INDEXING : Negative indexing means start from the end . (-1 refers to the last item). example :   thislist = ["apple", "banana", "cherry"]
+                                                                                                                    print(thislist[-1])    O/p : cherry 
+
+       * RANGE OF INDEXING : The specifying where to start and where to end the range .the return value will be a new list with the specified items.
+                       example :   thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+                                   print(thislist[2:5])           O/p : [ "cherry", "orange", "kiwi" ]
+       *    it also [-5:-1]  type mode use.
+
+(2) CHANGE LIST ITEMS : 
+                      *    To change the value of a specific item, refer to the index number .
+ example : 
+            thislist = ["apple", "banana", "cherry"]
+            thislist[1] = "blackcurrant"
+            print(thislist)                              #O/p : ["apple", "blackcurrant", "cherry"]
+ 
+              
+                     * To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+
+(3)  ADD LIST ITEMS : To add an item to the end of the list, use the append() method . Example : thislist = ["apple", "banana", "cherry"]
+                                                                                                 thislist.append("orange")
+                                                                                                 print(thislist)                   O/p :["orange","apple", "banana", "cherry"] 
+* INSERT ITEMS : To insert a list item at a specified index, use the insert() method.
+* EXTEND LIST : To append elements from another list to the current list, use the extend() method.
+ 
+(4) REMOVE ITEMS : 
+                    The remove() method removes the specified item.
+ Example : 
+            thislist = ["apple", "banana", "cherry"]
+            thislist.remove("banana")
+            print(thislist)               O/p : ["apple", "cherry"]
+                  
+  * REMOVE SPECIFIED INDEX : The pop() method removes the specified index . The del keyword also removes the specified index .
+  * CLEAR THE LIST : The clear() method empties the list. The list still remains, but it has no content.
+  * LOOP LIST : You can loop through the list items by using a ( for loop ) . You can loop through the list items by using a ( while loop ).
+
+(5) SORT LIST : List objects have a sort() method that will sort the list alphanumerically, ascending, by default .
+
+              Example :    thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+                           thislist.sort()
+                           print(thislist)            # O/p :  ['banana', 'kiwi', 'mango', 'orange', 'pineapple'] ....the list are alphabaticly arranged.
+ *  REVERSE ORDER : The reverse() method reverses the current sorting order of the elements , to reverse the order of a list, regardless of the alphabet .
+
+(6)  COPY LIST : You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, 
+                 and changes made in list1 will automatically also be made in list2.
+
+(7) LIST JOIN :     *  There are several ways to join, or concatenate, two or more lists in Python.
+                       One of the easiest ways are by using the + operator .
+                    *  Or you can use the extend() method .
+
+ LIST METHOD :
+
+               Method	               Description
+
+               append()	          Adds an element at the end of the list.
+
+               clear()	          Removes all the elements from the list.
+
+               copy()	            Returns a copy of the list.
+
+               count()	          Returns the number of elements with the specified value.
+
+               extend()	          Add the elements of a list (or any iterable), to the end of the current list.
+
+               index()	          Returns the index of the first element with the specified value.
+
+               insert()	          Adds an element at the specified position.
+
+               pop()	            Removes the element at the specified position.
+
+               remove()	          Removes the item with the specified value.
+
+               reverse()	        Reverses the order of the list.
+
+               sort()	            Sorts the list.
+
+
+
+                           (14) PYTHON TUPLE 
+
+*  Tuples are used to store multiple items in a single variable .
+*  A tuple is a collection which is ordered and unchangeable.
+*  Tuples are written with round brackets. (...).
+*  Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage .
+*  Tuple items are ordered, unchangeable, and allow duplicate values.
+
+       Example : 
+                      thistuple = ("apple", "banana", "cherry")
+                      print(thistuple)                               # O/p : ('apple', 'banana', 'cherry')  
+  
+
+                          (15) PYHTON SET 
+
+*  Sets are used to store multiple items in a single variable .
+*  A set is a collection which is unordered, unchangeable*, and unindexed .
+*  Sets are written with curly brackets .
+
+      Example :   thisset = {"apple", "banana", "cherry"}
+                  print(thisset)                     O/p : {'banana', 'apple', 'cherry'}
+
+
+SET METHODS : 
+
+   
+Method	                                      Description
+
+add()	                                  Adds an element to the set.
+
+clear()	                                Removes all the elements from the set.
+
+copy()	                                Returns a copy of the set.
+
+difference()	                          Returns a set containing the difference between two or more sets.
+
+difference_update()	                    Removes the items in this set that are also included in another, specified set.
+
+discard()	                              Remove the specified item.
+
+intersection()	                        Returns a set, that is the intersection of two other sets.
+
+intersection_update()	                  Removes the items in this set that are not present in other, specified set(s).
+
+isdisjoint()	                          Returns whether two sets have a intersection or not.
+
+issubset()	                            Returns whether another set contains this set or not.
+
+issuperset()	                          Returns whether this set contains another set or not.
+
+pop()	                                  Removes an element from the set.
+
+remove()	                              Removes the specified element.
+
+symmetric_difference()	                Returns a set with the symmetric differences of two sets.
+
+symmetric_difference_update()	          inserts the symmetric differences from this set and another.
+
+union()	                                Return a set containing the union of sets.
+
+update()	                              Update the set with the union of this set and others.
+
+
+
+
+                              (16) PYTHON DICTIONARIES
+
+*  Dictionaries are used to store data values in key:value pairs.
+*  A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+*  Dictionaries are written with curly brackets, and have keys and values.
+
+   Example :    thisdict = { "brand": "Ford","model": "Mustang","year": 1964}
+                print(thisdict)                   O/p : {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+
+DICTIONARIES METHOD : 
+
+
+      Method	Description
+1. clear()	                      Removes all the elements from the dictionary..
+
+2. copy()	                        Returns a copy of the dictionary.
+
+3. fromkeys()	                    Returns a dictionary with the specified keys and value.
+
+4. get()                          Returns the value of the specified key.
+
+5. items()	                      Returns a list containing a tuple for each key value pair.
+
+6. keys()                         Returns a list containing the dictionary's keys.
+
+7. pop()	                        Removes the element with the specified key.
+
+8. popitem()	                    Removes the last inserted key-value pair.
+
+9. setdefault()	                  Returns the value of the specified key. If the key does not exist: insert the key, with the specified value.
+
+10. update()	                    Updates the dictionary with the specified key-value pairs.
+
+11. values()                      Returns a list of all the values in the dictionary.
 
