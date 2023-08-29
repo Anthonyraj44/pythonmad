@@ -719,4 +719,141 @@ Example :
           i+=1                                             4
           else :                                           5
              print( " i is no longer less than 6")         i is no longer less than 6
-           
+
+
+
+                               (19)  FOR LOOP
+
+* A (for) loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string) .
+* (for) keyword in other programming languages, and works more like an iterator method as found 
+  in other object-orientated programming languages.
+* (for) loop we can execute a set of statements, once for each item in a list, tuple, set etc..
+* The for loop does not require an indexing variable to set beforehand.
+
+      Example : 
+
+             fruits = ["apple", "banana", "cherry"]             # O/p :   apple
+              for x in fruits:                                            banana
+                print(x)                                                  cherry
+
+
+ *  THE BREAK STATEMENT : 
+
+        *  the break statement we can stop the loop before it has looped through all the items .
+
+Example : 
+
+        fruits = ["apple", "banana", "cherry"]         # O/p :  apple
+        for x in fruits:                                        banana
+          print(x)
+          if x == "banana":
+            break
+
+*  THE CONTINUE STATEMENT :
+                          * the continue statement we can stop the current iteration of the loop, and continue with the next.
+
+Example : 
+              fruits = ["apple", "banana", "cherry"]        # O/p :  apple
+              for x in fruits:                                       cherry
+                if x == "banana":
+                  continue
+                print(x)
+
+* THE RANGE () FUNCTION : 
+
+           * To loop through a set of code a specified number of times, we can use the range() function .
+           * The range() function returns a sequence of numbers, starting from 0 by default ,  and ends at a specified number.
+(1) Example : 
+          for x in range(6):       # O/p : 0                         (2) Example :    for x in range(2, 30, 3):        O/p : 2 to 30 * values , 2 are defult 
+             print(x)                      1                                           print(x) 
+                                           2
+                                           3
+                                           4
+                                           5
+           # that range(6) is not the values of 0 to 6, but the values 0 to 5 .
+
+
+
+* THE PASS STATEMENT : 
+                        * for loops cannot be empty, but if you for some reason have a 
+                          for loop with no content, put in the pass statement to avoid getting an error.
+
+Example : 
+
+            for x in [0, 1, 2]:          # O/p : having an empty for loop like this, would raise an error without the pass statement .
+            pass
+
+
+
+                            (19)  PYTHON FUNCTIONS 
+
+    * A function is a block of code which only runs when it is called.
+    * You can pass data, known as parameters, into a function.
+    * A function can return data as a result.
+    * Python a function is defined using the (def) keyword.
+    * A parameter is the variable listed inside the parentheses in the function definition.
+      An argument is the value that is sent to the function when it is called.
+    * KEYWORD ARGUEMENT : You can also send arguments with the ( key = value syntax. )
+                          This way the order of the arguments does not matter.
+    * If we call the function without argument, it uses the default value example : def my_function(country = "Norway"):
+    * To let a function return a value, use the return statement.
+
+Example : 
+          def my_function():
+          print("Hello from a function")           # my_function is calling function .
+
+
+
+                           (20)  PYTHON LAMBDA 
+
+ * A lambda function is a small anonymous function.
+ * A lambda function can take any number of arguments, but can only have one expression.
+ * lambda arguments : expression.
+ * Lambda functions can take any number of arguments.
+
+Example : 
+           x = lambda a, b : a * b          # O/p : 30
+           print(x(5, 6))
+
+
+                         (21) PYTHON ARRAYS
+
+* Python does not have built-in support for Arrays, but (Python Lists)can be used instead.
+* Arrays are used to store multiple values in one single variable.
+* An array is a special variable, which can hold more than one value at a time.
+
+Example :
+              cars = ["Ford", "Volvo", "BMW"]        # O/p : ['Toyota', 'Volvo', 'BMW']
+              cars[0] = "Toyota"
+              print(cars)
+
+ARRAY METHODS :
+
+     
+                Method	                     Description
+
+             1. append()	     Adds an element at the end of the list.
+
+             2. clear()	       Removes all the elements from the list.
+
+             3. copy()	       Returns a copy of the list.
+
+             4. count()	       Returns the number of elements with the specified value.
+
+             5. extend()	     Add the elements of a list (or any iterable), to the end of the current list.
+
+             6. index()	       Returns the index of the first element with the specified value.
+
+             7. insert()       Adds an element at the specified position.
+
+             8. pop()	         Removes the element at the specified position.
+
+             9. remove()	     Removes the first item with the specified value.
+
+             10. reverse()	   Reverses the order of the list.
+
+             11. sort()	       Sorts the list.
+
+
+                (23)  PYTHON CLASSES AND OBJECTS
+
