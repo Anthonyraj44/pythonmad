@@ -953,7 +953,7 @@ Example :    Stop after 20 iterations :
 
 
 
-                                 (25) PYTHON ITERATORS 
+                                 (26) PYTHON ITERATORS 
 
 *  An iterator is an object that contains a countable number of values .
 *  in Python, an iterator is an object which implements the iterator protocol,
@@ -992,7 +992,7 @@ Example :
                   > To prevent the iteration from going on forever, we can use the StopIteration statement.
 
 
-                          (26) PYHON POLYMORPHISM
+                                      (27) PYHON POLYMORPHISM
 
  *  The word "polymorphism" means "many forms", and in programming it refers to methods/functions/operators with the 
     same name that can be executed on many objects or classes.
@@ -1010,4 +1010,143 @@ FUNCTION POLYMORPHISM : An example of a Python function that can be used on diff
 
 CLASS POLYMORPHISM :  Polymorphism is often used in Class methods, where we can have multiple classes with the same method name.
 
-   
+
+
+                                  (28) PYTHON SCOPE 
+
+*  A variable is only available from inside the region it is created. This is called scope.
+*  LOCAL SCOPE : A variable created inside a function belongs to the local scope of that function, 
+                 and can only be used inside that function .
+Example :
+             def myfunc():       # O/p; 300
+              x = 300
+              print(x)
+            
+             myfunc()
+
+* GLOBAL SCOPE : * A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+                   Global variables are available from within any scope, global and local .
+
+Example :
+                 A variable created outside of a function is global and can be used by anyone:
+      x = 300
+      def myfunc():
+        print(x)
+      myfunc()
+      print(x)
+
+*  NAMING VARIABLE :
+  
+  If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables,
+  one available in the global scope (outside the function) and one available in the local scope (inside the function)
+
+Example : The function will print the local x, and then the code will print the global x ?
+
+        x = 300
+        def myfunc():      # O/p ; 300
+          x = 200                  200
+          print(x)
+        myfunc()
+        print(x)
+
+* GLOBAL KEYWORD :
+
+ *  If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+    The global keyword makes the variable global.
+
+*  Also, use the global keyword if you want to make a change to a global variable inside a function.
+
+Example : If you use the global keyword, the variable belongs to the global scope ?
+
+        def myfunc():
+          global x            # O/p : 300
+          x = 300
+        myfunc()
+        print(x)
+
+
+                          (28) PYHTON MODULES
+
+*  Consider a module to be the same as a code library. 
+*  A file containing a set of functions you want to include in your application.
+*  CREATE A MODULE : To create a module just save the code you want in a file with the file extension( .py ).
+*  USE A MODULE :  Now we can use the module we just created, by using the import statement .
+*  When using a function from a module, use the syntax: module_name.function_name.
+*  VARIABLES IN MODULE : The module can contain functions, as already described, 
+                         but also variables of all types (arrays, dictionaries, objects etc) ..
+*  NAMING A MODULE : You can name the module file whatever you like, but it must have the file extension .py
+*  RE-NAMING A MODULE : You can create an alias when you import a module, by using the as keyword .
+*  BUILT - IN MODULES : There are several built-in modules in Python, which you can import whenever you like .
+*  USING THE dir() FUNCTION : There is a built-in function to list all the function names (or variable names) in a module. 
+                              The dir() function.
+*  The dir() function can be used on all modules, also the ones you create yourself. 
+*  IMPORT FROM THE MODULE : You can choose to import only parts from a module, by using the from keyword.
+
+
+Example 1 ; List all the defined names belonging to the platform module:
+
+    import platform                # O/p : ['DEV_NULL', '_UNIXCONFDIR', 'WIN32_CLIENT_RELEASES',....etc ]
+    x = dir(platform)
+    print(x)
+
+
+                            (29) PYHTON DATE & TIME 
+
+* A date in Python is not a data type of its own, but we can import a module named (datetime)
+  to work with dates as date objects.
+
+Example ;  Import the datetime module and display the current date:
+
+    import datetime                    # O/p ; 19:52 31-08-2023
+    x = datetime.datetime.now()
+    print(x)
+
+* DATE OUTPUT : 
+                 * When we execute the code from the example above the result will be:
+                       > ( 2023-08-31 19:49:38.424262 )
+                 * The date contains year, month, day, hour, minute, second, and microsecond.
+
+* CREATING DATE OBJECT : 
+                        *  To create a date, we can use the datetime() class (constructor) of the datetime module.
+                           The datetime() class requires three parameters to create a date: year, month, day.
+
+Example : Create a date object ?
+
+        import datetime                           # O/p : 2020-05-17 00:00:00
+        x = datetime.datetime(2020, 5, 17)
+        print(x)
+
+* THE strftime() METHOD :
+            * The datetime object has a method for formatting date objects into readable strings.
+            * The method is called strftime(), and takes one parameter, format, to specify the format of the returned string. 
+
+
+Directive	Description	Example	Try it
+%a	Weekday, short version	Wed	
+%A	Weekday, full version	Wednesday	
+%w	Weekday as a number 0-6, 0 is Sunday	3	
+%d	Day of month 01-31	31	
+%b	Month name, short version	Dec	
+%B	Month name, full version	December	
+%m	Month as a number 01-12	12	
+%y	Year, short version, without century	18	
+%Y	Year, full version	2018	
+%H	Hour 00-23	17	
+%I	Hour 00-12	05	
+%p	AM/PM	PM	
+%M	Minute 00-59	41	
+%S	Second 00-59	08	
+%f	Microsecond 000000-999999	548513	
+%z	UTC offset	+0100	
+%Z	Timezone	CST	
+%j	Day number of year 001-366	365	
+%U	Week number of year, Sunday as the first day of week, 00-53	52	
+%W	Week number of year, Monday as the first day of week, 00-53	52	
+%c	Local version of date and time	Mon Dec 31 17:41:00 2018	
+%C	Century	20	
+%x	Local version of date	12/31/18	
+%X	Local version of time	17:41:00	
+%%	A % character	%	
+%G	ISO 8601 year	2018	
+%u	ISO 8601 weekday (1-7)	1	
+%V	ISO 8601 weeknumber (01-53)	01
