@@ -1065,7 +1065,7 @@ Example : If you use the global keyword, the variable belongs to the global scop
         print(x)
 
 
-                          (28) PYHTON MODULES
+                          (29) PYHTON MODULES
 
 *  Consider a module to be the same as a code library. 
 *  A file containing a set of functions you want to include in your application.
@@ -1090,7 +1090,7 @@ Example 1 ; List all the defined names belonging to the platform module:
     print(x)
 
 
-                            (29) PYHTON DATE & TIME 
+                            (30) PYHTON DATE & TIME 
 
 * A date in Python is not a data type of its own, but we can import a module named (datetime)
   to work with dates as date objects.
@@ -1121,32 +1121,254 @@ Example : Create a date object ?
             * The method is called strftime(), and takes one parameter, format, to specify the format of the returned string. 
 
 
-Directive	Description	Example	Try it
-%a	Weekday, short version	Wed	
-%A	Weekday, full version	Wednesday	
-%w	Weekday as a number 0-6, 0 is Sunday	3	
-%d	Day of month 01-31	31	
-%b	Month name, short version	Dec	
-%B	Month name, full version	December	
-%m	Month as a number 01-12	12	
-%y	Year, short version, without century	18	
-%Y	Year, full version	2018	
-%H	Hour 00-23	17	
-%I	Hour 00-12	05	
-%p	AM/PM	PM	
-%M	Minute 00-59	41	
-%S	Second 00-59	08	
-%f	Microsecond 000000-999999	548513	
-%z	UTC offset	+0100	
-%Z	Timezone	CST	
-%j	Day number of year 001-366	365	
-%U	Week number of year, Sunday as the first day of week, 00-53	52	
-%W	Week number of year, Monday as the first day of week, 00-53	52	
-%c	Local version of date and time	Mon Dec 31 17:41:00 2018	
-%C	Century	20	
-%x	Local version of date	12/31/18	
-%X	Local version of time	17:41:00	
-%%	A % character	%	
-%G	ISO 8601 year	2018	
-%u	ISO 8601 weekday (1-7)	1	
-%V	ISO 8601 weeknumber (01-53)	01
+Directive	                          Description	                                                                 Example	
+
+
+%a                        	Weekday, short version	                                                               Wed	
+
+%A	                        Weekday, full version	                                                               Wednesday
+
+%w	                        Weekday as a number 0-6, 0 is Sunday	                                                  3	
+
+%d	                        Day of month 01-31	                                                                    31	
+
+%b	                        Month name, short version	                                                              Dec	
+
+%B	                        Month name, full version	                                                            December
+
+%m	                        Month as a number 01-12	                                                                 12	
+
+%y	                        Year, short version, without century                                                     18	
+
+%Y	                        Year, full version                                                                      2018	
+
+%H	                        Hour 00-23	                                                                             17	
+
+%I	                        Hour 00-12	                                                                             05	
+
+%p	                        AM/PM                                                                                    PM	
+
+%M	                        Minute 00-59	                                                                           41	
+
+%S	                        Second 00-59	                                                                           08	
+
+%f	                        Microsecond 000000-999999	                                                             548513	
+
+%z	                        UTC offset	                                                                           +0100	
+
+%Z	                        Timezone	                                                                               CST	
+
+%j	                        Day number of year 001-366	                                                             365	
+
+%U	                        Week number of year, Sunday as the first day of week, 00-53	                             52	
+
+%W	                        Week number of year, Monday as the first day of week, 00-53	                             52	
+
+%c                        	Local version of date and time	                                               Mon Dec 31 17:41:00 2018	
+
+%C	                        Century	                                                                                 20	
+
+%x	                        Local version of date	                                                                12/31/18
+
+%X	                        Local version of time	                                                                17:41:00	
+
+%%                         	A % character                                                                           	%	
+
+%G	                        ISO 8601 year	                                                                          2018	
+
+%u	                        ISO 8601 weekday (1-7)	                                                                  1	
+
+%V	                        ISO 8601 weeknumber (01-53)	                                                             01
+
+
+
+                           (31) PYTHON MATH
+
+*  Python has a set of built-in math functions, including an extensive math module, that allows you to perform 
+   mathematical tasks on numbers.
+
+*  The abs() function returns the absolute (positive) value of the specified number.
+
+*  The pow(x, y) function returns the value of x to the power of y (xy).
+
+        Example : Return the value of 4 to the power of 3 (same as 4 * 4 * 4) ?
+
+                      x = pow(4, 3)        # O/p : 64
+                       print(x)
+
+
+* BUILT- IN MATH FUNCTION : 
+        
+          * Python has a set of built-in math functions, including an extensive math module, that allows you to 
+            perform mathematical tasks on numbers.
+Example :
+            x = min(5, 10, 25)
+            y = max(5, 10, 25)          # O/p :  25
+            print(x)                             5
+            print(y)
+
+* THE MATH MADULE
+
+  *  Python has also a built-in module called math, which extends the list of mathematical functions.
+  *  To use it, you must import the math module.
+           [  import math ]
+  *  When you have imported the math module, you can start using methods and constants of the module.
+     The ( math.sqrt() ) method for example, returns the square root of a number.
+  *  The math.pi constant, returns the value of PI (3.14...) .
+  *  The math.ceil() method rounds a number upwards to its nearest integer, and the math.floor() method 
+     rounds a number downwards to its nearest integer, and returns the result.
+
+
+                             (32) PYTHON JSON 
+
+*  JSON is a syntax for storing and exchanging data.
+*  JSON is text, written with JavaScript object notation.
+*  Python has a built-in package called json, which can be used to work with JSON data .
+*  If you have a JSON string, you can parse it by using the json.loads() method. >>> The result will be python dictionary.
+*  CONVERT FROM PYTHON TO JSON :  
+
+
+CONVERT FROM PYTHON TO JSON :
+
+             If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+Example :
+
+            import json
+            # a Python object (dict):
+            x = {
+              "name": "John",
+              "age": 30,
+              "city": "New York"
+            }
+            # convert into JSON:
+            y = json.dumps(x)
+            # the result is a JSON string:
+            print(y)
+
+
+You can convert Python objects of the following types, into JSON strings :
+
+          1. dict
+          2. list
+          3. tuple
+          4. string
+          5. int
+          6. float
+          7. True
+          8. False
+          9. None
+
+
+         Python	        JSON
+
+    1.    dict	       Object
+    2.    list	       Array
+    3.    tuple        Array
+    4.    str	         String
+    5.    int	         Number
+    6.    float	       Number
+    7.    True	       true
+    8.    False	       false
+    9.    None	       null
+
+*  FORMAT THE RESULT :
+
+          *  The json.dumps() method has parameters to make it easier to read the result.
+          *  You can also define the separators, default value is (", ", ": ") .
+
+* ORDER THE RESULT :
+                        * The json.dumps() method has parameters to order the keys in the result.
+       #  sort the result alphabetically by keys.
+
+
+                      (33) PYTHON REGex
+
+*  A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
+*  RegEx can be used to check if a string contains the specified search pattern.
+
+* REGex in PYTHON : When you have imported the re module, you can start using regular expressions .
+
+* REGex FUNCTIONS :
+              The re module offers a set of functions that allows us to search a string for a match.
+
+   Function	                       Description
+
+1. findall	          Returns a list containing all matches
+2. search	            Returns a Match object if there is a match anywhere in the string
+3. split	            Returns a list where the string has been split at each match
+4. sub	              Replaces one or many matches with a string
+
+
+* METACHARACTERS :
+
+
+   Character	                        Description	                                                                Example	
+
+
+1.    []	                A set of characters                                                                   	"[a-m]"	
+
+2.    \	                  Signals a special sequence (can also be used to escape special characters)              	"\d"	
+
+3.    .	                  Any character (except newline character)                                              	"he..o"	
+
+4.    ^                  	Starts with                                                                           	"^hello"	
+
+5.    $	                  Ends with	                                                                              "planet$"	
+
+6.    *	                  Zero or more occurrences	                                                               "he.*o"	
+
+7.    +	                  One or more occurrences	                                                                  "he.+o"	
+
+8.    ?	                  Zero or one occurrences                                                                  	"he.?o"	
+
+9.   {}	                  Exactly the specified number of occurrences	                                              "he.{2}o"	
+
+10.   |	                  Either or	                                                                              "falls|stays"	
+
+11.   ()	                Capture and group	 	 
+
+
+* SPECIAL SEQUENCES
+
+        * A special sequence is a \ followed by one of the characters in the list below, and has a special meaning .
+ Example :
+            1.   \ A
+            2.   \ b
+            3.   \ B
+            4.   \ d
+            5.   \ D
+            6.   \ s
+            7.   \ S
+            8.   \ w
+            9.   \ W
+           10.   \ Z
+
+*  SETS 
+
+        * A set is a set of characters inside a pair of square brackets [] with a special meaning .
+  Example : 
+              1. [ arn ]
+              2. [ a-n ]
+              3. [ ^arn ]
+              4. [ 0123 ]
+              5. [ 0-9 ]
+              6. [ 0-5 ] [ 0-9 ]
+              7. [ a-z A-z ]
+              8. [ + ]
+
+* THE FINDALL () FUNCTION
+               *  The findall() function returns a list containing all matches.
+               *  The list contains the matches in the order they are found.
+               *  If no matches are found, an empty list is returned.
+
+* THE SEARCH () FUNCTION : 
+              * The search() function searches the string for a match, and returns a Match object if there is a match.
+                If there is more than one match, only the first occurrence of the match will be returned.
+              * If no matches are found, the value( None ) is returned .
+
+* THE SPILT() FUNCTION 
+                    * The split() function returns a list where the string has been split at each match .
+                    * You can control the number of occurrences by specifying the maxsplit parameter .
+
+* THE SUB() FUNCTION 
+     
