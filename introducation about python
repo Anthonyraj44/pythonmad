@@ -1,24 +1,25 @@
-                                          (1) PYTHON :
+                                          (1) PYTHON 
 
           * Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
           * python is an interpreted and object - oriented method ,high-level programming language with dynamic semantics.
 
-                                      (2) PYTHON USES :
+                                       (2) PYTHON USES 
 
-               * Python can be used on a server to create web applications.
-               * software development,
-               * mathematics,
-               * system scripting.
-               * web designing
-               * data analysis
+          * Python can be used on a server to create web applications.
+          * software development,
+          * mathematics,
+          * system scripting.
+          * web designing
+          * data analysis
 
-                                    (3) PYTHON COMMENTS :
+                                    (3) PYTHON COMMENTS 
 
-                 * Comments can be used to explain Python code.
-                 * Comments can be used to make the code more readable.so, understand to everyone
-                 * Comments can be used to prevent execution when testing code in python.
-                 * comments starting to be (#).and then python will ignore .
-                 * python accept multiple comments line.
+          * Comments can be used to explain Python code.
+          * Comments can be used to make the code more readable.so, understand to everyone
+          * Comments can be used to prevent execution when testing code in python.
+          * comments starting to be (#).and then python will ignore .
+          * python accept multiple comments line.
+
                    example:
                    
                (i)        a= 5,109,5
@@ -28,12 +29,13 @@
 
                         ➪  the # sentences are python are ignored in the program.
 
-                * Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
-                * it will be considerd (""" to """)
+            * Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it.
+            * it will be considerd (""" to """)
 
-                                       (4) VARIABLES :
+                                    (4) VARIABLES :
 
              * Variables are containers for storing data values.
+
               example :
                          a=10        # 10 is data storing value.
                                      # a is a variable.
@@ -47,52 +49,62 @@
 
 (i) Casting:
     ☞︎︎︎ If you want to specify the data type of a variable, this can be done with casting.
+
 (II) Get the Type:
     ☞︎︎︎ You can get the data type of a variable with the type() function.
+
 (III) Single and double quotes:
     ☞︎︎︎ the string variables can be declared by using ('' or "").
+
 (IV) Case-Sensitive:
       Variable names are case-sensitive.
+
       example: 
             a=10
             A="antho"   # the variable name are a & A is case - sensitive.
 
                                      (6) VARIABLE NAME :
 
-               * A variable name  can have a short name (like x and y) or name , place , a to z ...etc,
-               * it must be any letters or underscore character...( a=10 or a_anto =5)   # a & a_anto are variable name.
+          * A variable name  can have a short name (like x and y) or name , place , a to z ...etc,
+          * it must be any letters or underscore character...( a=10 or a_anto =5)   # a & a_anto are variable name.
 
-(7) VARIABLES ARE IN MULTI WAYS :
+(1) VARIABLES ARE IN MULTI WAYS :
                                there are different ways to variable to defined.
-(I) CAMEL CASE :
-                 Each word, except the first, starts with a capital letter:
+           1. Variable names.
+           2. Assign multiple values.
+           3. Output variable.
+           4. Global variable. 
+
+(1)  VARIABLE NAMES 
+
+(I) CAMEL CASE :  Each word, except the first, starts with a capital letter.
+
                 EXAMPLE:            myVariableName = "ANTO"         # my(V)ariable(N)ame =the first letter else. all are in capital letter.
 
-(II) PASCAL CASE :
-                  Each word starts with a capital letter:
+(II) PASCAL CASE :  Each word starts with a capital letter.
+
                 EXAMPLE:            MyVariableName = "anto"         # (M)y(V)ariable(N)ame = the all letter in capital letter.
 
-(III) SNAKE CASE :
-                  Each word is separated by an underscore character:
+(III) SNAKE CASE :   Each word is separated by an underscore character.
+
                  EXAMPLE:           my_variable_name = "anto"       # the each word is separated by "_".
 
 
 
- (8) ASSIGN MULTIPLE VALUE :
-                              Python allows you to assign values to multiple variables in one line.
+ (2) ASSIGN MULTIPLE VALUE :  Python allows you to assign values to multiple variables in one line.
+
                           Example: a,b,c= "anto","aravind","aakash"
                                    print(a,b,c)                     # "anto","aravind","aakash" the assign value in multiple variable.
   
 there are in different ways.
 
-(i) One Value to Multiple Variables:
-                                          And you can assign the same value to multiple variables in one line.
+(i) One Value to Multiple Variables:  And you can assign the same value to multiple variables in one line.
+
                                           Example:  x = y = z = "Orange"
                                                    print(x)
                                                    print(y)
                                                    print(z)                    # they are same value "orange" but the variable are dif
-(9) OUTPUT VARIABLES :
-
+(3) OUTPUT VARIABLES :
                     * The Python print() function is often used to output variables.
                     * The print () inside the argument values are ["+" ,"-" , "*" , "/"] whatever operator use to and to get the value. it's will be in numberic type.
                     * And to the value are in character [ "+" , ",'] are using
@@ -106,10 +118,10 @@ there are in different ways.
                                    y = 50
                                    print(x - y)            # the assign value to separation     O/P : 45
 
-(10) GLOBAL VARAIABLE :
+(4) GLOBAL VARAIABLE :
                        * Variables that are created outside of a function (as in all of the examples above) are known as global variables.
                        * Global variables can be used by everyone, both inside of functions and outside.           
-            example: 
+            eExample: 
                     a = "awesome"                
                     def myfunc():                               # def are used to outsidefunction
                       print("The boy is " + x)
@@ -125,11 +137,11 @@ there are in different ways.
                       print("the flower is " + x)                                                 O/p : the baby is cute
                                                                                                         the flower is adorable.
 
-                                (11) DATA TYPES IN PYTHON :
+                            (7) DATA TYPES IN PYTHON :
 
-                            *  In programming, data type is an important concept.
-                            *  Variables can store data of different types, and different types can do different things.
-                            *  Python has the following data types built-in by default.
+                   *  In programming, data type is an important concept.
+                   *  Variables can store data of different types, and different types can do different things.
+                   *  Python has the following data types built-in by default.
 The categories are ,
 
          ☞︎︎︎  Text Type         :	str ( string are text type / example : a= "alex" )
@@ -144,15 +156,15 @@ The categories are ,
 
          ☞︎︎︎  Boolean Type      :	bool ( Booleans represent one of two values: True or False / example : a = 10 
                                                                                                            print(10) )   o/p ; true.  
-                     
          ☞︎︎︎  Binary Types      :	bytes, bytearray, memoryview
 
          ☞︎︎︎  None Type         :	NoneType
 
 
-                                        (10)  PYTHON NUMBERS :
+                                        (8)  PYTHON NUMBERS :
 
- (i)   * there are three type in python.
+ (i)   there are three type in python.
+
                            ➪ int         ☞︎︎︎    Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length. ( example: a = 12 )
                            ➪ float       ☞︎︎︎   "Floating point number" is a number, positive or negative, containing one or more decimals  ( example: a = 12.0 )
                            ➪ complex     ☞︎︎︎    Complex numbers are written with a "j" as the imaginary part.  ( example: a = 12j )
@@ -165,7 +177,7 @@ example:
           print(random.randrange(1, 10))     # the random function are choose the value in random from the list.
 
 
-                             (11) specify a variable type (or) python casting :
+                             (9) PYTHON CASTING  :
 
                                  There may be times when you want to specify a type on to a variable.
 there are 3 type ,
@@ -173,7 +185,7 @@ there are 3 type ,
                     ➪ float()
                     ➪ str()
 
-                                          (12) PYHTON STRINGS :
+                            (10) PYHTON STRINGS :
 
    * Strings in python are surrounded by either single quotation marks, or double quotation marks.
    * 'hello' is the same as "hello".
@@ -263,25 +275,25 @@ example:
 
 ESCAPE CHARACTERS ;
 
-            1 .     \'	   Single Quote	  ➪   python to write the string normal , example : it is to change it's . (\') this format used.
+            1 .     \'	   Single Quote	       ➪       python to write the string normal , example : it is to change it's . (\') this format used.
 
-            2.      \\	   Backslash	  ➪   txt= "This will insert one \\ (backslash)." to  O/P : " This will insert one \ (backslash).
+            2.      \\	   Backslash	         ➪        txt= "This will insert one \\ (backslash)." to  O/P : " This will insert one \ (backslash).
 
-            3.      \n	   New Line	  ➪   txt = "Hello\nWorld!" to   O/P :  Hello
-                                                                                      World!	
+            3.      \n	   New Line	           ➪         txt = "Hello\nWorld!" to   O/P :  Hello
+                                                                                            World!	
 
-            4.      \r	   Carriage Return  ➪   txt = "Hello\rWorld!  to  O/P :  Hello
-                                                                                     World!
+            4.      \r	  Carriage Return      ➪         txt = "Hello\rWorld!  to  O/P :  Hello
+                                                                                           World!
 
-            5.      \t	   Tab	           ➪   txt = "Hello\tWorld!"  to  O/P : Hello  World       # both letter between spaced.
+            5.      \t	   Tab	              ➪         txt = "Hello\tWorld!"  to  O/P : Hello  World       # both letter between spaced.
 
-            6.      \b	   Backspace	  ➪   txt = "Hello \bWorld!" to  O/P : HelloWorld         # both letter between space removed
+            6.      \b	   Backspace	        ➪        txt = "Hello \bWorld!" to  O/P : HelloWorld         # both letter between space removed
 
-            7.      \f        Form Feed	  ➪
+            7.      \f        Form Feed	      ➪
 
-            8.      \ooo      Octal value	  ➪   txt = "\110\145\154\154\157"   to    O/P : Hello 
+            8.      \ooo      Octal value	    ➪        txt = "\110\145\154\154\157"   to    O/P : Hello 
 
-            9.      \xhh      Hex value        ➪   txt = "\x48\x65\x6c\x6c\x6f"   to   O/P : Hello
+            9.      \xhh      Hex value       ➪        txt = "\x48\x65\x6c\x6c\x6f"   to   O/P : Hello
 
 
                                        (11) PYTHON BOOLEANS 
@@ -329,7 +341,7 @@ example : ( x = 10 , y = 5 )
                                   Assignment operators are used to assign values to variables.
 .... X=5
 
-                    Operator		    Same As	       o/P :
+                        Operator		      Same As	        o/P :
 
                   1.      =	x = 5	        x = 5	            5
                   2.     +=	x += 3	     x = x + 3	        8
@@ -395,15 +407,17 @@ Operator	           Description	                                                
 
 
 
-                            (13) PYTHON LIST
+                             (13) PYTHON LIST
 
    * Lists are used to store multiple items in a single variable .
    * Lists are created using square brackets [] .
    * List items are , * ordered * changeable * allow all dublicate value. 
+
 Examble :
         thislist = ["apple", "banana", "cherry", "apple", "cherry"]      # two apple are in the list .
 
    * LIST LENGTH : To determine how many items a list has, use the len() function .
+
 Example : 
            thislist = ["apple", "banana", "cherry"]
            print(len(thislist))                              # O/p : 3
@@ -423,6 +437,7 @@ Example :
                        example :   thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
                                    print(thislist[2:5])           O/p : [ "cherry", "orange", "kiwi" ]
        *    it also [-5:-1]  type mode use.
+
 
 (2) CHANGE LIST ITEMS : 
                       *    To change the value of a specific item, refer to the index number .
@@ -675,7 +690,7 @@ STATEMENT              DISTRACTION                                            EX
 
                          (17) PYTHON LOOPS 
 
-     Python has two primitive loop commands:
+  Python has two primitive loop commands:
 
                                    ➪  while loops
                                    ➪  for loops
@@ -785,7 +800,7 @@ Example :
 
 
 
-                            (19)  PYTHON FUNCTIONS 
+                            (20)  PYTHON FUNCTIONS 
 
     * A function is a block of code which only runs when it is called.
     * You can pass data, known as parameters, into a function.
@@ -804,7 +819,7 @@ Example :
 
 
 
-                           (20)  PYTHON LAMBDA 
+                           (21)  PYTHON LAMBDA 
 
  * A lambda function is a small anonymous function.
  * A lambda function can take any number of arguments, but can only have one expression.
@@ -816,7 +831,7 @@ Example :
            print(x(5, 6))
 
 
-                         (21) PYTHON ARRAYS
+                         (22) PYTHON ARRAYS
 
 * Python does not have built-in support for Arrays, but (Python Lists)can be used instead.
 * Arrays are used to store multiple values in one single variable.
@@ -958,9 +973,9 @@ Example :    Stop after 20 iterations :
 *  An iterator is an object that contains a countable number of values .
 *  in Python, an iterator is an object which implements the iterator protocol,
    which consist of the methods __iter__() and __next__(). 
-*  ITERABLE :  Lists, tuples, dictionaries, and sets are all iterable objects..
+  ITERABLE :  Lists, tuples, dictionaries, and sets are all iterable objects..
                They are iterable containers which you can get an iterator from.
-*  ITERATOR :  All these objects have a iter() method which is used to get an iterator .
+  ITERATOR :  All these objects have a iter() method which is used to get an iterator .
 *  Even strings are iterable objects, and can return an iterator .
 *  Looping Through an Iterator : >  We can also use a for loop to iterate through an iterable object .
                                  >  The for loop actually creates an iterator object and executes the next() method for each loop.
@@ -988,7 +1003,7 @@ Example :
       print(next(myiter))
       print(next(myiter))
 
-* StopIteration : > The example above would continue forever if you had enough next() statements, or if it was used in a for loop.
+ StopIteration : > The example above would continue forever if you had enough next() statements, or if it was used in a for loop.
                   > To prevent the iteration from going on forever, we can use the StopIteration statement.
 
 
@@ -1015,7 +1030,7 @@ CLASS POLYMORPHISM :  Polymorphism is often used in Class methods, where we can 
                                   (28) PYTHON SCOPE 
 
 *  A variable is only available from inside the region it is created. This is called scope.
-*  LOCAL SCOPE : A variable created inside a function belongs to the local scope of that function, 
+  LOCAL SCOPE : A variable created inside a function belongs to the local scope of that function, 
                  and can only be used inside that function .
 Example :
              def myfunc():       # O/p; 300
@@ -1024,7 +1039,7 @@ Example :
             
              myfunc()
 
-* GLOBAL SCOPE : * A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+ GLOBAL SCOPE : * A variable created in the main body of the Python code is a global variable and belongs to the global scope.
                    Global variables are available from within any scope, global and local .
 
 Example :
@@ -1035,7 +1050,7 @@ Example :
       myfunc()
       print(x)
 
-*  NAMING VARIABLE :
+  NAMING VARIABLE :
   
   If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables,
   one available in the global scope (outside the function) and one available in the local scope (inside the function)
@@ -1049,7 +1064,7 @@ Example : The function will print the local x, and then the code will print the 
         myfunc()
         print(x)
 
-* GLOBAL KEYWORD :
+ GLOBAL KEYWORD :
 
  *  If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
     The global keyword makes the variable global.
@@ -1069,18 +1084,18 @@ Example : If you use the global keyword, the variable belongs to the global scop
 
 *  Consider a module to be the same as a code library. 
 *  A file containing a set of functions you want to include in your application.
-*  CREATE A MODULE : To create a module just save the code you want in a file with the file extension( .py ).
-*  USE A MODULE :  Now we can use the module we just created, by using the import statement .
-*  When using a function from a module, use the syntax: module_name.function_name.
-*  VARIABLES IN MODULE : The module can contain functions, as already described, 
+  CREATE A MODULE : To create a module just save the code you want in a file with the file extension( .py ).
+  USE A MODULE :  Now we can use the module we just created, by using the import statement .
+*  When using a function from a module, use the syntax : module_name.function_name.
+  VARIABLES IN MODULE : The module can contain functions, as already described, 
                          but also variables of all types (arrays, dictionaries, objects etc) ..
-*  NAMING A MODULE : You can name the module file whatever you like, but it must have the file extension .py
-*  RE-NAMING A MODULE : You can create an alias when you import a module, by using the as keyword .
-*  BUILT - IN MODULES : There are several built-in modules in Python, which you can import whenever you like .
-*  USING THE dir() FUNCTION : There is a built-in function to list all the function names (or variable names) in a module. 
+  NAMING A MODULE : You can name the module file whatever you like, but it must have the file extension .py
+  RE-NAMING A MODULE : You can create an alias when you import a module, by using the as keyword .
+  BUILT - IN MODULES : There are several built-in modules in Python, which you can import whenever you like .
+  USING THE dir() FUNCTION : There is a built-in function to list all the function names (or variable names) in a module. 
                               The dir() function.
 *  The dir() function can be used on all modules, also the ones you create yourself. 
-*  IMPORT FROM THE MODULE : You can choose to import only parts from a module, by using the from keyword.
+  IMPORT FROM THE MODULE : You can choose to import only parts from a module, by using the from keyword.
 
 
 Example 1 ; List all the defined names belonging to the platform module:
@@ -1101,12 +1116,12 @@ Example ;  Import the datetime module and display the current date:
     x = datetime.datetime.now()
     print(x)
 
-* DATE OUTPUT : 
+ DATE OUTPUT : 
                  * When we execute the code from the example above the result will be:
                        > ( 2023-08-31 19:49:38.424262 )
                  * The date contains year, month, day, hour, minute, second, and microsecond.
 
-* CREATING DATE OBJECT : 
+ CREATING DATE OBJECT : 
                         *  To create a date, we can use the datetime() class (constructor) of the datetime module.
                            The datetime() class requires three parameters to create a date: year, month, day.
 
@@ -1116,7 +1131,7 @@ Example : Create a date object ?
         x = datetime.datetime(2020, 5, 17)
         print(x)
 
-* THE strftime() METHOD :
+ THE strftime() METHOD :
             * The datetime object has a method for formatting date objects into readable strings.
             * The method is called strftime(), and takes one parameter, format, to specify the format of the returned string. 
 
@@ -1182,7 +1197,7 @@ Directive	                          Description	                                
 
 
 
-                           (31) PYTHON MATH
+                                       (31) PYTHON MATH
 
 *  Python has a set of built-in math functions, including an extensive math module, that allows you to perform 
    mathematical tasks on numbers.
@@ -1197,7 +1212,7 @@ Directive	                          Description	                                
                        print(x)
 
 
-* BUILT- IN MATH FUNCTION : 
+ BUILT- IN MATH FUNCTION : 
         
           * Python has a set of built-in math functions, including an extensive math module, that allows you to 
             perform mathematical tasks on numbers.
@@ -1207,7 +1222,7 @@ Example :
             print(x)                             5
             print(y)
 
-* THE MATH MADULE
+ THE MATH MADULE
 
   *  Python has also a built-in module called math, which extends the list of mathematical functions.
   *  To use it, you must import the math module.
@@ -1271,24 +1286,24 @@ You can convert Python objects of the following types, into JSON strings :
     8.    False	       false
     9.    None	       null
 
-*  FORMAT THE RESULT :
+  FORMAT THE RESULT :
 
           *  The json.dumps() method has parameters to make it easier to read the result.
           *  You can also define the separators, default value is (", ", ": ") .
 
-* ORDER THE RESULT :
+  ORDER THE RESULT :
                         * The json.dumps() method has parameters to order the keys in the result.
        #  sort the result alphabetically by keys.
 
 
-                      (33) PYTHON REGex
+                              (33) PYTHON REGex
 
 *  A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern.
 *  RegEx can be used to check if a string contains the specified search pattern.
 
-* REGex in PYTHON : When you have imported the re module, you can start using regular expressions .
+ REGex in PYTHON : When you have imported the re module, you can start using regular expressions .
 
-* REGex FUNCTIONS :
+ REGex FUNCTIONS :
               The re module offers a set of functions that allows us to search a string for a match.
 
    Function	                       Description
@@ -1299,7 +1314,7 @@ You can convert Python objects of the following types, into JSON strings :
 4. sub	              Replaces one or many matches with a string
 
 
-* METACHARACTERS :
+ METACHARACTERS :
 
 
    Character	                        Description	                                                                Example	
@@ -1328,7 +1343,7 @@ You can convert Python objects of the following types, into JSON strings :
 11.   ()	                Capture and group	 	 
 
 
-* SPECIAL SEQUENCES
+ SPECIAL SEQUENCES
 
         * A special sequence is a \ followed by one of the characters in the list below, and has a special meaning .
  Example :
@@ -1343,7 +1358,7 @@ You can convert Python objects of the following types, into JSON strings :
             9.   \ W
            10.   \ Z
 
-*  SETS 
+  SETS 
 
         * A set is a set of characters inside a pair of square brackets [] with a special meaning .
   Example : 
@@ -1356,19 +1371,158 @@ You can convert Python objects of the following types, into JSON strings :
               7. [ a-z A-z ]
               8. [ + ]
 
-* THE FINDALL () FUNCTION
+ THE FINDALL () FUNCTION
                *  The findall() function returns a list containing all matches.
                *  The list contains the matches in the order they are found.
                *  If no matches are found, an empty list is returned.
 
-* THE SEARCH () FUNCTION : 
+ THE SEARCH () FUNCTION : 
               * The search() function searches the string for a match, and returns a Match object if there is a match.
                 If there is more than one match, only the first occurrence of the match will be returned.
               * If no matches are found, the value( None ) is returned .
 
-* THE SPILT() FUNCTION 
+ THE SPILT() FUNCTION 
                     * The split() function returns a list where the string has been split at each match .
                     * You can control the number of occurrences by specifying the maxsplit parameter .
 
-* THE SUB() FUNCTION 
-     
+ THE SUB() FUNCTION 
+                    * The sub() function replaces the matches with the text of your choice.
+                    * Replace all white-space characters .
+                    * You can control the number of replacements by specifying the count parameter.
+
+ MATCH OBJECT 
+                  *  A Match Object is an object containing information about the search and the result.
+                  *  If there is no match, the value None will be returned, instead of the Match Object.
+                  *   If there is no match, the value None will be returned, instead of the Match Object .
+
+The Match object has properties and methods used to retrieve information about the search, and the result:
+
+          1.     .span()            returns a tuple containing the start-, and end positions of the match.
+          2.     .string            returns the string passed into the function
+          3.     .group()           returns the part of the string where there was a match
+
+
+
+                                          (34) PYTHON PIP
+
+*  PIP is a package manager for Python packages, or modules if you like.
+*  If you have Python version 3.4 or later, PIP is included by default.
+
+  PACKAGE : *  PIP is a package manager for Python packages, or modules if you like.
+             *  If you have Python version 3.4 or later, PIP is included by default.
+
+* Navigate your command line to the location of Python's script directory, and type the following .
+          C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip --version
+
+ INSTALL PIPE : If you do not have PIP installed, you can download and install it from this page: https://pypi.org/project/pip/ .
+
+ DOWNLOAD A PACKAGE : *  Downloading a package is very easy.
+
+                       *  Open the command line interface and tell PIP to download the package you want.
+                       *  Navigate your command line to the location of Python's script directory, and type the following.
+  [ C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>pip install camelcase ]
+
+ USING A PACKAGE  : * Once the package is installed, it is ready to use.
+                     * Import the "camelcase" package into your project.
+
+Example :  Import and use "camelcase"?
+
+              import camelcase
+              c = camelcase.CamelCase()
+              txt = "lorem ipsum dolor sit amet"
+              print(c.hump(txt) 
+
+#This method capitalizes the first letter of each word.
+
+
+  FIND MORE PACKAGE : 
+                         Find more packages at https://pypi.org/.
+
+
+                         (36) PYTHON TRY... EXCEPT
+
+*  The try block lets you test a block of code for errors.
+*  The except block lets you handle the error.
+*  The else block lets you execute code when there is no error.
+*  The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+EXPECTION HANDLING 
+
+          *  When an error occurs, or exception as we call it, Python will normally stop and generate an error message.
+             These exceptions can be handled using the (try) statement .
+          *  Since the try block raises an error, the except block will be executed.
+          *  Without the try block, the program will crash and raise an error.
+
+MANY EXCEPTION :  You can define as many exception blocks as you want, e.g. 
+                  if you want to execute a special block of code for a special kind of error
+
+ELSE : You can use the else keyword to define a block of code to be executed if no errors were raised .
+         #The try block does not raise any errors, so the else block is executed .
+
+FINALLY : The finally block, if specified, will be executed regardless if the try block raises an error or not.
+
+RAISE AN EXCEPTION :  *  As a Python developer you can choose to throw an exception if a condition occurs.
+                         To throw (or raise) an exception, use the raise keyword.
+                      *  The raise keyword is used to raise an exception.
+
+
+                                      (37) PYTHON USER INPUT 
+
+USER INPUT : 
+
+        Python allows for user input.
+
+> That means we are able to ask the user for input.
+> The method is a bit different in Python 3.6 than Python 2.7.
+> Python 3.6 uses the input() method.
+> Python 2.7 uses the raw_input() method.
+
+example ;
+
+PYTHON 3.6 :  
+
+              username = input("Enter username:")        # o/P : Enter username :
+              print("Username is: " + username)
+
+> Python stops executing when it comes to the input() function, and continues when the user has given some input.
+
+
+                                  (38) PYTHON STRING FORMATTING 
+
+*  To make sure a string will display as expected, we can format the result with the format() method.
+  STRING FORMATING :   >   he format() method allows you to format selected parts of a string.
+                        >  Sometimes there are parts of a text that you do not control, maybe they come from a database,
+                           or user input?
+                        >  To control such values, add placeholders (curly brackets {}) in the text, and run the values
+                           through the format() method .
+
+Example : 
+
+ Add a placeholder where you want to display the price:
+
+      price = 49                                 # O/p : The price is 49 dollars
+      txt = "The price is {} dollars"
+      print(txt.format(price))
+*  You can add parameters inside the curly brackets {} to specify how to convert the value.
+
+  MULTIPLE VALUES :  *  If you want to use more values, just add more values to the format() method:
+                         
+                            print(txt.format(price, itemno, count))
+
+  INDEX NUMBERS : You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the
+                  correct placeholders .
+Example : 
+
+      age = 36                                     # O/p : His name is John. John is 36 years old.
+      name = "John"
+      txt = "His name is {1}. {1} is {0} years old."
+      print(txt.format(age, name))
+
+ NAMED INDEXES
+
+       *  You can also use named indexes by entering a name inside the curly brackets {carname}, 
+          but then you must use names when you pass the parameter values txt.format(carname = "Ford").
+
+Example :
+            myorder = "I have a {carname}, it is a {model}."                # O/p : I have a Ford, it is a Mustang.
+            print(myorder.format(carname = "Ford", model = "Mustang"))
